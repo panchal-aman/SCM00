@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.RegBody {
+    width: 100%;
+    max-width: 720px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 20px;
+    width: 100%;
+    max-width: 720px;
+}
+
+form h1{
+    grid-column: 1/-1;
+}
+form .RegHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/-1;
+}
+
+form .RegHead .line {
+    width: 33%;
+    height: 0px;
+    outline: 1px solid white;
+}
+
+form .RegHead h1 {
+    width: 33%;
+}
+form .TandC {
+    grid-column: 1/-1;
+}
+
+form #TandC{
+    accent-color: transparent;
+    border: none;
+}
+form .TandC input[type="checkbox"]:focus{
+    
+    outline: none;
+    border: none;
+}
+
+
+form button{
+    margin-top: 2rem;
+    grid-column: 1/-1;
+}
+
+@media only screen and (max-width: 720px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    form h1,
+    form .RegHead,
+    form .RegHead .line,
+    form .TandC,
+    form button {
+        grid-column: 1 / -1; 
+    }
+}

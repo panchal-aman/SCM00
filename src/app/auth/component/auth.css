@@ -1,0 +1,31 @@
+body{
+    background: linear-gradient(to right bottom, rgb(61,69,128), rgb(147,102,172));
+    color: white;
+}
+
+
+form input::placeholder{
+    color: white;
+}
+input, button{
+    background: rgba(255, 255, 255, 0.076);
+    border: none;
+    height: 2rem;
+    border-radius: 8px;
+    padding-left: 1rem;
+    
+}
+input:focus ,button:focus{
+    outline: white 2px solid ;
+    color: inherit;
+}
+button{
+    background-color: rgb(251,176,58);
+}
+button:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 720px) {
+    
+}

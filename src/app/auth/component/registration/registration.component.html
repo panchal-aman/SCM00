@@ -1,0 +1,34 @@
+
+<body>
+    <div class="RegBody">
+
+    
+    <form #RegForm="ngForm" (ngSubmit)="RegistrationFormSubmit(RegForm)">
+
+        <h1 class="text-center">
+
+            <i class="bi bi-person-circle" style="font-size: 4rem;"></i>
+        </h1>
+        <div class="RegHead">
+            <div class="line"></div>
+            <h1 class="text-center">Sign up</h1>
+            <div class="line"></div>
+        </div>
+        
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="text" name="username" id="username" placeholder="Username" required>
+        <input type="tel" name="contNumber" id="contNumber" placeholder="Phone No."  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <div class="px-2 TandC" style="display: flex; align-items: center; ">
+            <input  type="checkbox" name="TandC" id="TandC" style="accent-color: green;">
+            <label class="px-2" for="TandC">I agree to the X Software and Service Agreement</label>
+        </div>
+         <button type="submit">Register</button>
+
+    </form>
+    <div class="m-2 text-center">Already have a account <a routerLink="">Login now</a></div>
+</div>
+</body>
+
